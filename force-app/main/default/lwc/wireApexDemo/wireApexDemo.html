@@ -1,3 +1,10 @@
 <template>
-    
+    <ul>
+        <h1>Hello World</h1>
+        <template for:each={contacts.data} for:item="contact">
+            <li key={contact.Id}>
+                {contact.FirstName}
+            </li>
+        </template>
+    </ul>
 </template>

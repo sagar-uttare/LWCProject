@@ -5,8 +5,7 @@ public with sharing class ContactController {
             return [SELECT AccountId,Id,FirstName 
                     FROM Contact
                     WHERE AccountId =: accId
-                    WITH SECURUTY_INFORCED
-                    ];
+                    WITH SECURITY_ENFORCED];
         }catch(Exception e ){
             throw new AuraHandledException(e.getMessage());
         }
