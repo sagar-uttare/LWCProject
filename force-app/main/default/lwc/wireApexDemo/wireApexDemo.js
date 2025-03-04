@@ -6,4 +6,5 @@ export default class WireApexDemo extends LightningElement {
 
     @wire(getContact ,{accId:'$recordId'})
     contacts;
+    
 }
