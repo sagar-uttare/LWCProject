@@ -2,9 +2,6 @@ import { LightningElement } from 'lwc';
 
 export default class Datablinding extends LightningElement {
 
-
-    //USE OF GETTER PROPERTYs
-    
     firstName = '';
     lastName = '';
 
@@ -13,16 +10,12 @@ export default class Datablinding extends LightningElement {
         console.log(fields);
         if(fields ==='fName'){
             this.firstName = event.target.value;
-        }else if(fields ==='lName'){
+        }else if(fields ==='lame'){
             this.lastName = event.target.value;
         }
     }
-    get upperCase(){ 
-        if(this.firstName.toLocaleLowerCase()){
-            return `${this.firstName} ${this.lastName}`.toUpperCase();
-
-        }else return`${this.firstName} ${this.lastName}`.toUpperCase();
-
-
+    get upperCase(){
+        // return `${this.firstName} ${this.lastName}`.toUpperCase();
+        return `${this.firstName === this.firstName.toUpperCase() ? this.firstName.toLowerCase() : this.firstName.toUpperCase()} ${this.lastName === this.lastName.toUpperCase() ? this.lastName.toLowerCase() : this.lastName.toUpperCase()}`;
     }
 }
