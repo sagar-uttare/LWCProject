@@ -1,0 +1,9 @@
+<template>
+<!-- <p>Hello,{geeting}</p>  -->
+    <div class="slds-var-m-around_medium">
+        <lightning-input name="fName" label="First Name" onchange={handleChange}></lightning-input>
+        <lightning-input name="lName" label="Last Name" onchange={handleChange}></lightning-input>
+        <p class="slds-var-m-top_medium">UpperCase : {upperCase}</p>
+    </div>
+    <lightning-button variant="brand" label="Brand" title="Primary action" onclick={handleClick} class="slds-var-m-bottom_medium"></lightning-button>
+</template>
