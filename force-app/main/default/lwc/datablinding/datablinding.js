@@ -18,4 +18,10 @@ export default class Datablinding extends LightningElement {
         // return `${this.firstName} ${this.lastName}`.toUpperCase();
         return `${this.firstName === this.firstName.toUpperCase() ? this.firstName.toLowerCase() : this.firstName.toUpperCase()} ${this.lastName === this.lastName.toUpperCase() ? this.lastName.toLowerCase() : this.lastName.toUpperCase()}`;
     }
+
+    greeting = 'sagar';
+
+    handleClick(){
+        this.greeting = this.template.querySelector("lightning-input").value;
+    }
 }
