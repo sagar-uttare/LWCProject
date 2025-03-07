@@ -7,11 +7,14 @@
     </div>
     <lightning-button variant="brand" label="Brand" title="Primary action" onclick={handleClick} class="slds-var-m-bottom_medium"></lightning-button>
     <lightning-button variant="destructive" label="Destructive" title="Destructive action" onclick={handleClick} class="slds-var-m-left_x-small"></lightning-button>
-
-    <h1 class="slds-text-align_center">Hello,{greeting} Welcome</h1>
-
-    <lightning-input label="Name" value={greeting}></lightning-input>
+   
+    <lightning-card>
+    <h1 class="slds-text-align_center">Hello,{firstName} {lastName} Welcome</h1>
+    <lightning-input label="First Name" value={firstName1} name ='fname'></lightning-input>
+    <lightning-input label="Last Name" value={lastName1} name = 'lname'></lightning-input> 
     <br>
-
     <lightning-button label="Click Me" onclick={handleClick} variant="brand"></lightning-button>
+    </lightning-card>
+       
+    
 </template>
