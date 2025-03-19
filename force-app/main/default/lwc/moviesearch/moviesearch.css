@@ -1,0 +1,9 @@
+.custom-container{
+	color : black;
+}
+.white-label {
+	--lwc-colorTextLabel: white;
+}
+:host {
+	--lwc-colorTextLabel: white;
+  }

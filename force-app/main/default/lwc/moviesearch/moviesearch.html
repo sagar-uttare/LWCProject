@@ -1,0 +1,42 @@
+<template>
+    <!-- Filter section -->
+    <p>This is a paragraph with dark blue text.</p>
+
+    <div>
+        <lightning-layout horizontal-align='center'>
+       <lightning-layout-item sizes='3'
+        padding='around-medium' 
+        ><lightning-combobox
+            class="white-label"
+            name="type"
+            label="Type"
+            value={selectedType}
+            placeholder="Selected Type"
+            options={typeoptions}
+            onchange={handleChange}>
+        </lightning-combobox> 
+        </lightning-layout-item>
+ 
+        <lightning-layout-item 
+        padding='around-small' 
+        size="7">
+        <lightning-input
+            name="search-item"
+            label="Search Movie"
+            placeholder="Search for movie/series"
+            is-loading = {loading}
+            type="search"
+        ></lightning-input>
+        </lightning-layout-item>
+
+        <lightning-layout-item size="2"
+        padding="around-small" 
+        >
+        </lightning-layout-item>
+        </lightning-layout>
+    </div>
+    <!-- Display Section -->
+    <div >
+
+    </div>
+</template>
